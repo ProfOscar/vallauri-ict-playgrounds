@@ -1,10 +1,21 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-main',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  names = ["Barak Obama", "Lewis Hamilton", "Scarlett Johansson",
+    "Antonio Conte", "Marcello Rossi", "Alberto Barbero",
+    "Debora Servetti", "Paolo Cortese", "Paolino Paperino"];
+  myName = 'Oscar Cambieri';
+
+  changeName() {
+    this.myName = this.names[this.getRandomInt(0, 8)];
+  }
+
+  getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 }
