@@ -1,0 +1,22 @@
+<h4>INSTRUCTIONS</h4>
+<ol>
+  <li>Add an Input Field wich update the property "username" with the <b>two-way databinding</b>.</li>
+  <li>Output the "username" property below the Input Field using <b>string interpolation</b></li>
+  <li>Add a <b>button only ENABLED</b> if the "username" is NOT an empty string.</li>
+  <li>Upon <b>clicking the button</b> the "username" should be reset to an empty string</li>
+</ol>
+<h4>RESULTS</h4>
+<!--TODO: QUI LAVORATE VOI-->
+<input type="text" class="form-control" (input)="onUpdateUsername($event)" [(ngModel)]='username'>
+<!--TODO: fare l'esercizio di angular-->
+<!--<input type="text"
+    class="form-control"
+    [(ngModel)] = 'username'>
+<br>-->
+<!-- $EVENT SERVER PER PASSARE al type script tutte le info dell'evento scatenato ed è una sintassi standard-->
+<button class="btn btn-Username" style="background-color: lightblue;" [disabled]="!allowEnabledButton" (click)="onResetUsername()">
+  RESET USERNAME FIELD
+</button>
+<!-- (click) = "function()" è un data binding di angular, quindi non si può usare l'onclick -->
+<hr>
+<h5>the selected username is: {{ username }}</h5>
