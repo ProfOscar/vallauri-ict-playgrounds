@@ -1,0 +1,22 @@
+{
+    "posts": [
+        { "id": 1, "title": "Json-Server", "author": "Piscitello" },
+        { "id": 2, "title": "Random User", "author": "Piscitello" },
+        { "id": 3, "title": "Uso di XML", "author": "ProfRossi" },
+        { "id": 4, "title": "Http Server con NodeJS", "author": "ProfOscar" },
+        { "id": 5, "title": "La Costituzione Italiana", "author": "Cortese" },
+        { "id": 6, "title": "Prontuario Comandi GIT", "author": "ProfOscar" }
+    ],
+    "comments": [
+        { "id": 1, "body": "Non ho capito come si usa", "postId": 1 },
+        { "id": 2, "body": "Installalo con npm install -g json-server", "postId": 1 },
+        { "id": 3, "body": "Bellissima lezione, Preside", "postId": 5 }
+    ],
+    "authors": [
+        {"id": 1, "name": "ProfRossi"},
+        {"id": 2, "name": "Piscitello"},
+        {"id": 3, "name": "Cortese"},
+        {"id": 4, "name": "ProfOscar"}
+    ],
+    "profile": { "name": "4C TPSI BOT", "description": "Fake user for the 4 INF C class." }
+  }
